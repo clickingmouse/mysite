@@ -33,9 +33,12 @@ const Navbar = () => {
               <NavLink to="#">Login</NavLink>
             </li>
             <li>
-              <a href="#" className="btn-floating indigo darken-4 z-depth-0">
+              <NavLink
+                to="#"
+                className="btn-floating indigo darken-4 z-depth-0"
+              >
                 <i className="material-icons">notifications</i>
-              </a>
+              </NavLink>
             </li>
             <li>
               <span
