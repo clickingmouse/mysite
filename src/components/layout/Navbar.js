@@ -21,16 +21,29 @@ const Navbar = () => {
               <NavLink to="#">Home</NavLink>
             </li>
             <li>
-              <NavLink to="#">Home</NavLink>
+              <NavLink to="#">About</NavLink>
             </li>
             <li>
               <NavLink to="#">Home</NavLink>
             </li>
             <li>
-              <NavLink to="#">Home</NavLink>
+              <NavLink to="#">Contact</NavLink>
             </li>
             <li>
-              <NavLink to="#">Home</NavLink>
+              <NavLink to="#">Login</NavLink>
+            </li>
+            <li>
+              <a href="#" className="btn-floating indigo darken-4 z-depth-0">
+                <i className="material-icons">notifications</i>
+              </a>
+            </li>
+            <li>
+              <span
+                className="badge white-text pink new"
+                style={{ position: "relative", top: 20, right: 20 }}
+              >
+                5
+              </span>
             </li>
           </ul>
         </div>
@@ -42,6 +55,9 @@ const Navbar = () => {
         </li>
         <li>
           <NavLink to="#">About</NavLink>
+        </li>
+        <li>
+          <NavLink to="#">Home</NavLink>
         </li>
         <li>
           <NavLink to="#">Contact</NavLink>
