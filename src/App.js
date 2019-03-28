@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./components/layout/Navbar";
-import Header from "./components/layout/Header";
+import Landing from "./components/layout/Landing";
+//import Header from "./components/layout/Header";
 import { BrowserRouter } from "react-router-dom";
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <Navbar />
-          <Header />
+          <Landing />
         </div>
       </BrowserRouter>
     );
