@@ -1,16 +1,22 @@
 import React from "react";
 
-export default function WeatherCard() {
+export default function WeatherCard(props) {
+  console.log("debug WeatherCard:");
+  console.log(props);
   return (
     <div className="container">
       <div className="row">
         <div className="col s2 m2 l2">
           <div className="card blue lighten-5">
             <div className="card-title">
-              <h5 className="center">TODAY</h5>
+              <h5 className="center">{props.title}</h5>
             </div>
-            <i className="far fa-sun fa-6x" />
-            <p>lorem </p>
+
+            <i className={props.icon} />
+            <p>{props.summary}</p>
+            <p>
+              {props.minTempC}C - {props.maxTempC}C
+            </p>
           </div>
         </div>
       </div>

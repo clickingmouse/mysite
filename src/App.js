@@ -5,6 +5,7 @@ import Header from "./components/layout/Header";
 import WeatherForecast from "./components/weather/WeatherForeacast";
 import { BrowserRouter } from "react-router-dom";
 import Rooms from "./components/layout/Rooms";
+import Weather from "./components/weather/Weather";
 class App extends Component {
   render() {
     return (
@@ -12,7 +13,8 @@ class App extends Component {
         <div className="App">
           <Navbar />
           <Header />
-          <WeatherForecast />
+
+          <Weather />
           <Rooms />
         </div>
       </BrowserRouter>
