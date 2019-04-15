@@ -77,23 +77,21 @@ class ForecastWeather extends React.Component {
     let forecast = this.state.forecast;
     console.log(">>");
     console.log(forecast);
-
-    var forecastRender = forecast.map(weather => (
-      <WeatherCard
-        title={weather.md}
-        minTempC={weather.minTempC}
-        maxTempC={weather.maxTempC}
-        summary={weather.summary}
-      />
+    forecast = forecast.slice(0, 4);
+    var forecastRender = forecast.map((weather, i) => (
+      <span className="">
+        <WeatherCard
+          key={i}
+          title={weather.md}
+          minTempC={weather.minTempC}
+          maxTempC={weather.maxTempC}
+          summary={weather.summary}
+        />
+      </span>
     ));
     console.log(forecastRender);
 
-    return (
-      <div>
-        <p>FORECAST ...</p>
-        {forecastRender}
-      </div>
-    );
+    return <div className="row">{forecastRender}</div>;
   }
 }
 

@@ -98,7 +98,7 @@ class TodayWeather extends React.Component {
   }
   render() {
     return (
-      <div>
+      <span className="">
         <WeatherCard
           title={this.state.date}
           date="date"
@@ -108,7 +108,7 @@ class TodayWeather extends React.Component {
           summary={this.state.summary}
           tempF="tempF"
         />
-      </div>
+      </span>
     );
   }
 }
