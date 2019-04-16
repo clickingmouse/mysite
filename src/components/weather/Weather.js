@@ -10,11 +10,9 @@ export default function Weather() {
   return (
     <div id="weather" style={divStyle} className="container row">
       <span className="">
-        Todays Weather
         <TodayWeather />
       </span>
       <span className="">
-        Future Outlook
         <ForecastWeather />
       </span>
     </div>

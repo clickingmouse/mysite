@@ -85,7 +85,7 @@ class TodayWeather extends React.Component {
           date: "-=today=-",
           tempMinC: response.data.main.temp_min,
           tempMaxC: response.data.main.temp_max,
-          summary: response.data.weather[0].description
+          summary: response.data.weather[1].description
         });
         console.log(this.state);
       })

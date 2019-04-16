@@ -36,13 +36,16 @@ class ForecastWeather extends React.Component {
     if (weatherMain.match("intervals")) {
       icon = weatherIconsLegend.lightClouds;
     }
-    if (weatherMain.match("cloudy")) {
-      icon = weatherIconsLegend.cloudy;
-    }
+
     if (weatherMain.match("showers")) {
       icon = weatherIconsLegend.lightShowers;
     }
-
+    if (weatherMain.match("cloudy")) {
+      icon = weatherIconsLegend.cloudy;
+      if (weatherMain.match("showers")) {
+        icon = weatherIconsLegend.rainy;
+      }
+    }
     if (weatherMain.match("rainy")) {
       icon = weatherIconsLegend.rainy;
     }
