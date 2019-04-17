@@ -6,11 +6,12 @@ export default function WeatherCard(props) {
   return (
     <div className="col s4 m2 l2">
       <div className="card blue lighten-5">
-        <div className="card-title">
+        <div className="card-title ">
           <h5 className="center">{props.title}</h5>
         </div>
-
-        <i className={props.icon} />
+        <div className="center">
+          <i className={props.icon} />
+        </div>
         <p>{props.summary}</p>
         <p>
           {props.minTempC}C - {props.maxTempC}C
