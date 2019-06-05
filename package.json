@@ -34,6 +34,7 @@
     "jest-resolve": "23.6.0",
     "jest-watch-typeahead": "^0.2.1",
     "mini-css-extract-plugin": "0.5.0",
+    "netlify-lambda": "^1.4.13",
     "optimize-css-assets-webpack-plugin": "5.0.1",
     "pnp-webpack-plugin": "1.2.1",
     "postcss-flexbugs-fixes": "4.1.0",
@@ -58,6 +59,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
+    "prod": "yarn start build; yarn run lambda-build",
+    "lambda-serve": "NODE_ENV=development BABEL_ENV=development netlify-lambda serve functions",
+    "lambda-build": "netlify-lambda build functions",
     "test": "node scripts/test.js"
   },
   "eslintConfig": {
