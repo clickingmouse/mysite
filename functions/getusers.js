@@ -26,12 +26,12 @@ exports.handler = function(event, context, callback) {
   const getUsers = () => {
     console.log("---===>>>");
     //console.log(YAHOO_API_KEY);
-    console.log(YAHOO_API_ID);
+    console.log(YAHOO_APP_ID);
     console.log(YAHOO_API_CLIENT_ID);
     console.log(YAHOO_API_CLIENT_SECRET);
 
     var header = {
-      "X-Yahoo-App-Id": YAHOO_API_ID
+      "X-Yahoo-App-Id": YAHOO_APP_ID
     };
     var request = new OAuth.OAuth(
       null,
