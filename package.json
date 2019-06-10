@@ -65,6 +65,9 @@
     "lambda-build": "netlify-lambda build functions",
     "test": "node scripts/test.js"
   },
+  "scriptsComments": {
+    "lambda-serve": "NODE_ENV=development BABEL_ENV=development netlify-lambda serve functions"
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
