@@ -4503,10 +4503,17 @@ var axios = __webpack_require__(/*! axios */ "../node_modules/axios/index.js");
 var OAuth = __webpack_require__(/*! oauth */ "../node_modules/oauth/index.js");
 
 exports.handler = function (event, context, callback) {
-  var YAHOO_API_URL = process.env.REACT_APP_YAHOO_API_URL;
-  var YAHOO_API_CLIENT_ID = process.env.REACT_APP_YAHOO_API_CLIENT_ID;
-  var YAHOO_API_CLIENT_SECRET = process.env.REACT_APP_YAHOO_API_CLIENT_SECRET;
-  var YAHOO_API_ID = process.env.REACT_APP_YAHOO_API_ID; //send user response
+  /*
+  const YAHOO_API_URL = process.env.REACT_APP_YAHOO_API_URL;
+  const YAHOO_API_CLIENT_ID = process.env.REACT_APP_YAHOO_API_CLIENT_ID;
+  const YAHOO_API_CLIENT_SECRET = process.env.REACT_APP_YAHOO_API_CLIENT_SECRET;
+  const YAHOO_API_ID = process.env.REACT_APP_YAHOO_API_ID;
+  */
+  var _process$env = process.env,
+      YAHOO_API_CLIENT_ID = _process$env.YAHOO_API_CLIENT_ID,
+      YAHOO_API_CLIENT_SECRET = _process$env.YAHOO_API_CLIENT_SECRET,
+      YAHOO_APP_ID = _process$env.YAHOO_APP_ID;
+  console.log(YAHOO_APP_ID); //send user response
 
   var send = function send(body) {
     callback(null, {

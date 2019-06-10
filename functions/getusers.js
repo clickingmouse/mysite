@@ -2,11 +2,18 @@ const axios = require("axios");
 const OAuth = require("oauth");
 
 exports.handler = function(event, context, callback) {
+  /*
   const YAHOO_API_URL = process.env.REACT_APP_YAHOO_API_URL;
   const YAHOO_API_CLIENT_ID = process.env.REACT_APP_YAHOO_API_CLIENT_ID;
   const YAHOO_API_CLIENT_SECRET = process.env.REACT_APP_YAHOO_API_CLIENT_SECRET;
   const YAHOO_API_ID = process.env.REACT_APP_YAHOO_API_ID;
-
+*/
+  const {
+    YAHOO_API_CLIENT_ID,
+    YAHOO_API_CLIENT_SECRET,
+    YAHOO_APP_ID
+  } = process.env;
+  console.log(YAHOO_APP_ID);
   //send user response
   const send = body => {
     callback(null, {
