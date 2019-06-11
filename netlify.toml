@@ -1,3 +1,4 @@
 [build]
 functions = "lambda"
 command = "yarn run prod && ps auxw ; false"
+publish = "build"
